@@ -5,4 +5,6 @@ class Info:
         self.face_bookp =face_bookp
         self.email_p = email_p
     def save_info(self):
-        Info.info_list.append(self)   
+        Info.info_list.append(self)
+    def delete_info(self):
+        Info.info_list.remove(self)
