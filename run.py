@@ -12,6 +12,10 @@ def save_account(user):
     user.save_user()
 def save_credentials(credentials):
     credentials.save_info()
+def display_users():
+    return User.display_user()
+def display_creds():
+    return Info.display_info()    
 def main():
     print("Hello there welcome to password locker .....")
     while True:
