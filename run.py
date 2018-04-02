@@ -13,7 +13,7 @@ def save_account(user):
 def save_credentials(credentials):
     credentials.save_info()
 def display_users():
-    return User.display_user()
+    return User.display_users()
 def display_creds():
     return Info.display_info()
 def main():
@@ -48,9 +48,10 @@ def main():
                 for user in display_users():
                     print(f"{user.f_name}{user.m_name}")
                 for credentials in display_creds():
-                    print(f"{face_bookp}")
-                else:
-                    print("you have not created any accounts yet... :( ")       
+                    print (f"{face_bookp}")
+            else:
+                    print('\n')
+                    print("you have not created any accounts yet... :( ")
         elif short_code == "ex":
             print("Bye... Bye...")
             break

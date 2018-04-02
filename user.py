@@ -12,5 +12,5 @@ class User:
     def delete_user(self):
         User.user_list.remove(self)
     @classmethod
-    def display_user(cls):
+    def display_users(cls):
         return cls.user_list
