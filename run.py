@@ -54,10 +54,16 @@ def main():
                     print("you have not created any accounts yet... :( ")
         elif  short_code == 'gs':
             print("To generate password enter f_name and face_bookp")
-            passwords = input()
-            for password in passwords:
-                answer=[1,2,3]
-            print("{answer}")    
+            list_of_inputs = input().split()
+            list_of_inputs= list(list_of_inputs)
+            list_of_inputs.reverse()
+
+
+
+            print (list_of_inputs)
+
+
+
 
 
 
