@@ -15,7 +15,7 @@ def save_credentials(credentials):
 def main():
     print("Hello there welcome to password locker .....")
     while True:
-        print("Use the following short codes :cc- create an a new account")
+        print("Use the following short codes :cc- create an a new account ,ex- exit the password locker")
         short_code = input() .lower()
         if short_code =='cc':
             print("Create a new account")
@@ -37,8 +37,11 @@ def main():
             print('\n')
             print(f"New Account  {f_name}{m_name}{face_bookp} has been created")
             print('\n')
+        elif short_code == "ex":
+            print("Bye... Bye...")
+            break
         else:
-            print("please enter options listed above")
+            print("please select one ofthe options provided")
 
 if __name__ == '__main__':
 
