@@ -10,6 +10,9 @@ class Info:
         '''
         Info.info_list.append(self)
     def delete_info(self):
+        '''
+        Function added to delete credentials
+        '''
         Info.info_list.remove(self)
     @classmethod
     def display_info(cls):
