@@ -32,8 +32,8 @@ def main():
             print("what is your email password...")
             e_mailp= input()
             save_account(create_account(f_name,m_name,e_mail))
-            print ('\n')
-            save_credentials(save_credentials(face_bookp,e_mailp))
+            print('\n')
+            save_credentials(create_credentials (face_bookp,e_mailp))
             print('\n')
             print(f"New Account  {f_name}{m_name}{face_bookp} has been created")
             print('\n')
@@ -41,5 +41,5 @@ def main():
             print("please enter options listed above")
 
 if __name__ == '__main__':
-    
+
     main()
