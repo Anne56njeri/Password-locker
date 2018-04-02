@@ -15,11 +15,11 @@ def save_credentials(credentials):
 def display_users():
     return User.display_user()
 def display_creds():
-    return Info.display_info()    
+    return Info.display_info()
 def main():
     print("Hello there welcome to password locker .....")
     while True:
-        print("Use the following short codes :cc- create an a new account ,ex- exit the password locker")
+        print("Use the following short codes :cc- create an a new account ,ex- exit the password locker,dac -display accounts")
         short_code = input() .lower()
         if short_code =='cc':
             print("Create a new account")
@@ -41,6 +41,16 @@ def main():
             print('\n')
             print(f"New Account  {f_name}{m_name}{face_bookp} has been created")
             print('\n')
+        elif short_code =='dac':
+            if display_users():
+                print("The user name")
+                print('\n')
+                for user in display_users():
+                    print(f"{user.f_name}{user.m_name}")
+                for credentials in display_creds():
+                    print(f"{face_bookp}")
+                else:
+                    print("you have not created any accounts yet... :( ")       
         elif short_code == "ex":
             print("Bye... Bye...")
             break
