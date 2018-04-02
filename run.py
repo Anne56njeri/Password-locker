@@ -10,4 +10,5 @@ def create_credentials(face_bookp,e_mailp):
     return new_cred
 def save_account(user):
     user.save_user()
-    
+def save_credentials(credentials):
+    credentials.save_info()    
