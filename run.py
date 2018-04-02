@@ -19,7 +19,7 @@ def display_creds():
 def main():
     print("Hello there welcome to password locker .....")
     while True:
-        print("Use the following short codes :cc- create an a new account ,ex- exit the password locker,dac -display accounts")
+        print("Use the following short codes :cc- create an a new account ,ex- exit the password locker,dac -display accounts,gs-generate password")
         short_code = input() .lower()
         if short_code =='cc':
             print("Create a new account")
@@ -52,6 +52,15 @@ def main():
             else:
                     print('\n')
                     print("you have not created any accounts yet... :( ")
+        elif  short_code == 'gs':
+            print("To generate password enter f_name and face_bookp")
+            passwords = input()
+            for password in passwords:
+                answer=[1,2,3]
+            print("{answer}")    
+
+
+
         elif short_code == "ex":
             print("Bye... Bye...")
             break
